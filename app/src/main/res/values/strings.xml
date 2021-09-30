@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">TMS</string>
+
+
+    <string name="key">AIzaSyD9PwTSu6IOdX4DtJc51UMF9Dfj0N9aqfc</string>
+    <string name="txt">Dont Have An Account? <b>Register.</b></string>
+    <string name="txt1">Already Have An Account? <b>Login.</b></string>
+    <string name="title_activity_maps">MapsActivity</string>
+</resources>
