@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/bgd1"
+    tools:context=".RegisterActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="16dp">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="50dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register Page"
+        android:layout_gravity="center"
+        android:textColor="@color/white"
+        android:layout_marginBottom="30dp"
+        android:textSize="42sp"
+        android:textStyle="bold"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Role"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="22sp"/>
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            android:layout_marginBottom="10dp"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:id="@+id/student"
+                android:layout_margin="5dp"
+                app:cardBackgroundColor="@color/main"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="15dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:layout_margin="10dp"
+                    android:textSize="20sp"
+                    android:text="Student"
+                    android:textAlignment="center" />
+            </androidx.cardview.widget.CardView>
+
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".1"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_weight="1.2"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:id="@+id/teacher"
+                app:cardBackgroundColor="@color/dash"
+                android:layout_margin="5dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="15dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:layout_margin="10dp"
+                        android:textSize="20sp"
+                        android:text="Teacher"
+                        android:textAlignment="center" />
+            </androidx.cardview.widget.CardView>
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".1"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_weight=".8"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:id="@+id/staff"
+                app:cardBackgroundColor="@color/dash"
+                android:layout_margin="5dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="15dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:layout_margin="10dp"
+                        android:textSize="20sp"
+                        android:text="Staff"
+                        android:textAlignment="center" />
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="ID Number"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:hintTextColor="@color/white"
+            app:boxStrokeColor="@color/boxstroke"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="20dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:layout_marginEnd="20dp"
+            android:id="@+id/lsid"
+            app:shapeAppearance="@style/Cut">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/sid"
+                android:layout_width="match_parent"
+                android:inputType="number"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Full Name"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:hintTextColor="@color/white"
+            app:boxStrokeColor="@color/boxstroke"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:id="@+id/lfname"
+            app:shapeAppearance="@style/Cut">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/fname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:inputType="textPersonName"
+                android:textSize="20sp"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="User Name"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:hintTextColor="@color/white"
+        app:boxStrokeColor="@color/boxstroke"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:id="@+id/luname"
+        app:shapeAppearance="@style/Cut">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/uname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:inputType="textPersonName"
+            android:textSize="20sp"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Contact Number"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:layout_marginBottom="10dp"
+        app:hintTextColor="@color/white"
+        app:boxStrokeColor="@color/boxstroke"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:id="@+id/lphone"
+        app:shapeAppearance="@style/Cut">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:textColor="@color/white"
+            android:textSize="20sp"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Pick Up Stoppage"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:layout_marginBottom="10dp"
+        app:hintTextColor="@color/white"
+        app:boxStrokeColor="@color/boxstroke"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="20dp"
+        android:inputType="none"
+        android:layout_marginEnd="20dp"
+        android:id="@+id/lpick"
+        app:shapeAppearance="@style/Cut">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/pick"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:inputType="none"
+        android:textSize="20sp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/transparent"
+        android:spinnerMode="dialog" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            app:hintTextColor="@color/white"
+            android:id="@+id/lpass"
+            android:layout_marginBottom="10dp"
+            app:boxStrokeColor="@color/boxstroke"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="20dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+            android:layout_marginEnd="20dp"
+        app:endIconTint="@color/white"
+            app:endIconMode="password_toggle"
+            app:shapeAppearance="@style/Cut">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/pass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:textColor="@color/white"
+                android:textSize="20sp"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/register"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:text="Register"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:background="@drawable/button"/>
+
+        <TextView
+            android:id="@+id/login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txt1"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="35dp"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"/>
+    </LinearLayout>
+    </ScrollView>
+
+
+    <com.github.ybq.android.spinkit.SpinKitView
+        android:id="@+id/spin_kit"
+        style="@style/SpinKitView.Large.Circle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:layout_gravity="center"
+        app:SpinKit_Color="@color/main" />
+</FrameLayout>
